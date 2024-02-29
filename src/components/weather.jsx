@@ -27,14 +27,14 @@ const Weather = () => {
     
   };
   return (
-    <div className="bg-black w-full flex items-center justify-center h-[100vh] p-5 weather">
-      <div className="p-16 md:p-9 bg-[#BCD7F4] rounded-md">
+    <div className="flex items-center justify-center h-[100vh] w-[100vw] p-24 weather">
+      <div className="w-auto p-3 sm:p-6 md:p-9 bg-[#BCD7F4] rounded-md">
         <div className="">
         <h1 className="text-2xl font-semibold font-mono border-b-2 border-transparent hover:border-b-2 hover:border-black">Weather Report</h1>
         {/* <p className="font-medium">I can give you a weather report about your city</p> */}
         <div className="flex items-center justify-center flex-col sm:flex-row gap-2 mt-3">
           <input
-            className="rounded  focus:outline-none p-1"
+            className="rounded  focus:outline-none p-1 "
             type="text"
             value={city}
             onChange={handlecity}
@@ -50,7 +50,7 @@ const Weather = () => {
         <Icon weather={weather} />
         <div className="flex flex-col md:flex-row items-center justify-around md:gap-2">
           <h2 className="text-xl font-semibold">{temp?<>{temp}&deg;C</>:null}</h2>
-          <h2 className="text-xl font-semibold">{weather?<>|   {weather}   |</>:null}</h2>
+          <h2 className="text-xl font-semibold">{weather?<>{weather}</>:null}</h2>
           <h2 className="text-xl font-semibold">{desc}</h2>
         </div>
         </div>
