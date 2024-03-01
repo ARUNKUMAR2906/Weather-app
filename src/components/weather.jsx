@@ -30,7 +30,7 @@ const Weather = () => {
     <div className="flex items-center justify-center h-[100vh] w-[100vw] p-24 weather">
       <div className="w-auto p-3 sm:p-6 md:p-9 bg-[#BCD7F4] rounded-md">
         <div className="">
-        <h1 className="text-2xl font-semibold font-mono border-b-2 border-transparent hover:border-b-2 hover:border-black">Weather Report</h1>
+        <h1 className="text-xl sm:text-2xl font-semibold font-mono border-b-2 border-transparent hover:border-b-2 hover:border-black">Weather Report</h1>
         {/* <p className="font-medium">I can give you a weather report about your city</p> */}
         <div className="flex items-center justify-center flex-col sm:flex-row gap-2 mt-3">
           <input
